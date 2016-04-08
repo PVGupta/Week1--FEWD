@@ -1,30 +1,46 @@
-img{
-  float:left;
-}
-.container{
-  float:right;
-}
-img, .container{
-  width:45%;
-}
-.container{
+
+.container {
+  width: 80%;
+  margin: auto ;/* why the 10% after auto*/
   font-family: sans-serif;
 }
-.container p{
-  line-height: 1.6;
+
+.container p {
+  line-height: 1.4;
 }
-ul{
-  padding:0;
+
+/* why did he combine .main image and description what does the box thing do  */
+
+.main-image {
+  float: left;
+  margin-bottom: 20px;
+  width: 50%;
+  box-sizing: border-box;
 }
-ul li {
+
+.description {
+  float: right;
+  padding-left: 15px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.social {
   list-style-type: none;
-  display: inline-block;
 }
-ul li:after {
-  content: '/';
+/* why the padding left*/
+
+.social li {
   display: inline-block;
-  padding: 0 5px;
+  padding-right: 5px;
 }
-ul li:last-child::after{
-  display: none;
+
+.social li img{
+  max-width: 35px;
+  height: auto;
+}
+
+.footer {
+  clear: both;
+  border-top: 1px solid #ccc;
 }
